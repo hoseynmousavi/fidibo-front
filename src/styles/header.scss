@@ -1,0 +1,126 @@
+.header {
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--header-z-index);
+  background-color: var(--first-background-color);
+  border-radius: 0 0 var(--second-radius) var(--second-radius);
+  padding: 0 var(--first-solid-padding);
+  box-shadow: var(--first-shadow);
+}
+
+.header-content {
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-top {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.header-top-logo {
+  height: 32px;
+}
+
+.header-top-search {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 24px;
+}
+
+.header-top-search-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  inset-inline-start: calc((var(--btn-input-height) - 24px) / 2);
+  transform: translateY(-50%);
+}
+
+.header-top-search-input {
+  width: 100%;
+  height: var(--btn-input-height);
+  background-color: var(--second-background-color);
+  border-radius: var(--second-radius);
+  border: 1px solid var(--second-border-color);
+  padding-inline-start: calc(((var(--btn-input-height) - 24px) / 2) + 24px + 8px);
+  font-size: var(--large-font);
+
+  &::placeholder {
+    color: var(--second-icon-color);
+  }
+}
+
+.header-top-login-icon {
+  width: 24px;
+  height: 24px;
+  margin-inline-end: 8px;
+}
+
+.header-top-basket {
+  margin-inline-start: 16px;
+}
+
+.header-top-basket-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bottom-categories {
+  display: flex;
+  align-items: center;
+  margin-inline-start: -12px;
+}
+
+.header-bottom-categories-item {
+  border-color: transparent !important;
+}
+
+.header-bottom-categories-item-icon {
+  width: 24px;
+  height: 24px;
+  margin-inline-end: 8px;
+}
+
+.header-bottom-categories-item-title {
+  font-size: var(--title-font);
+  font-family: "my-font-demibold", serif;
+
+  &.plus {
+    color: var(--second-color);
+  }
+}
+
+.header-bottom-download {
+  border-color: transparent !important;
+  margin-inline-end: -12px;
+}
+
+.header-bottom-download-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header-bottom-download-title {
+  font-size: var(--title-font);
+  margin: 0 4px;
+}
+
+.header-bottom-download-arrow {
+  width: 20px;
+  height: 20px;
+}

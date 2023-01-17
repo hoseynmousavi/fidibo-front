@@ -1,0 +1,32 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-name {
+  color: var(--second-icon-color);
+  font-size: var(--small-font);
+  padding: 16px 4px;
+
+  &.last {
+    color: var(--first-text-color);
+    font-family: "my-font-demibold", serif;
+  }
+}
+
+.breadcrumb-arrow {
+  width: 16px;
+  height: 16px;
+
+  path {
+    fill: var(--first-icon-color);
+  }
+
+  &.last {
+    path {
+      fill: var(--third-icon-color);
+      stroke: var(--third-icon-color);
+      stroke-width: 0.5px;
+    }
+  }
+}

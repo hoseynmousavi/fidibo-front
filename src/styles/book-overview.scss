@@ -1,0 +1,38 @@
+.book-overview {
+  background-color: var(--second-background-color);
+  padding: var(--header-height) var(--first-solid-padding) 0;
+  min-height: var(--full-height);
+}
+
+.book-overview-content {
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+}
+
+.book-overview-loading {
+  min-height: calc(var(--full-height) - var(--header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-overview-first-section {
+  width: 66%;
+  vertical-align: top;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: var(--box-padding);
+}
+
+.book-overview-second-section {
+  width: calc(34% - var(--box-padding));
+  margin-inline-start: var(--box-padding);
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+  padding: var(--box-padding) 0;
+  gap: 16px;
+  position: sticky;
+  top: var(--header-height);
+}

@@ -1,0 +1,33 @@
+@import "../seyed-modules/styles/index";
+
+@import "animations";
+@import "button";
+@import "show-image";
+@import "footer";
+@import "header";
+@import "breadcrumb";
+@import "book-overview";
+@import "book-main-box";
+@import "book-buy-box";
+@import "book-editions";
+@import "book-library";
+@import "book-introduction";
+@import "book-vl-rows";
+
+@font-face {
+  font-family: "my-font";
+  src: url("../media/fonts/yekan-fanum-regular.woff") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "my-font-demibold";
+  src: url("../media/fonts/yekan-fanum-demibold.woff") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "my-font-bold";
+  src: url("../media/fonts/yekan-fanum-bold.woff") format("woff2");
+  font-display: swap;
+}

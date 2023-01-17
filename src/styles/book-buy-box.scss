@@ -1,0 +1,129 @@
+.book-buy-box {
+  background-color: var(--first-background-color);
+  border-radius: var(--second-radius);
+  padding: 24px;
+}
+
+.book-buy-box-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.book-buy-box-header-first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-buy-box-header-rate {
+  display: flex;
+  align-items: center;
+}
+
+.book-buy-box-header-rate-icon {
+  width: 20px;
+  height: 20px;
+  margin-inline-end: 4px;
+
+  &.empty {
+    path {
+      fill: var(--forth-icon-color);
+    }
+  }
+}
+
+.book-buy-box-header-rate-title {
+  display: flex;
+  align-items: center;
+  font-size: var(--title-font);
+  font-family: "my-font-demibold", serif;
+
+  &.empty {
+    color: var(--second-text-color);
+  }
+}
+
+.book-buy-box-header-rate-title-responses {
+  font-size: var(--small-font);
+  font-family: "my-font", serif;
+  color: var(--second-icon-color);
+  margin-inline-start: 4px;
+}
+
+.book-buy-box-header-rate-badge {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.book-buy-box-header-rate-badge-item {
+  border-radius: var(--forth-radius);
+  background-color: var(--third-background-color);
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: var(--small-font);
+}
+
+.book-buy-box-header-second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.book-buy-box-header-discount {
+  display: flex;
+  align-items: center;
+}
+
+.book-buy-box-header-discount-price {
+  color: var(--second-text-color);
+  font-size: var(--title-font);
+}
+
+.book-buy-box-header-discount-percent {
+  border-radius: var(--third-radius);
+  background-color: var(--danger-color);
+  padding: 2px 8px 0;
+  color: var(--solid-light);
+  font-size: var(--regular-font);
+  margin-inline-start: 4px;
+}
+
+.book-buy-box-header-price {
+  display: flex;
+  align-items: center;
+}
+
+.book-buy-box-header-price-number {
+  font-size: var(--huge-font);
+  margin-inline-end: 4px;
+}
+
+.book-buy-box-header-price-title {
+  color: var(--first-icon-color);
+  font-size: var(--small-font);
+}
+
+.book-buy-box-main-btn {
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+}
+
+.book-buy-box-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.book-buy-box-footer-first {
+  flex-grow: 1;
+  font-family: "my-font-demibold", serif;
+}
+
+.book-buy-box-footer-second {
+  font-family: "my-font-demibold", serif;
+}

@@ -1,0 +1,135 @@
+.book-introduction {
+  background-color: var(--first-background-color);
+  border-radius: var(--second-radius);
+}
+
+.book-introduction-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 0;
+  border-bottom: 1px solid var(--first-border-color);
+}
+
+.book-introduction-header-item {
+  margin-bottom: -1.5px;
+  padding: 0 16px;
+  border-radius: var(--first-radius);
+  cursor: pointer;
+
+  &.active {
+    .book-introduction-header-item-content {
+      color: var(--first-text-color);
+      font-family: "my-font-bold", serif;
+    }
+
+    .book-introduction-header-item-content-border {
+      background-color: var(--first-color);
+    }
+  }
+}
+
+.book-introduction-header-item-content {
+  position: relative;
+  padding: 16px 0;
+  color: var(--second-text-color);
+  font-family: "my-font-demibold", serif;
+  font-size: var(--large-font);
+}
+
+.book-introduction-header-item-content-border {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.book-introduction-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.book-introduction-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.book-introduction-desc-text {
+  font-size: var(--title-font);
+  line-height: var(--first-line-height);
+  text-align: justify;
+  text-align-last: start;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow: hidden;
+  transition: height var(--first-transition);
+}
+
+.book-introduction-desc-btn {
+  margin-top: 8px;
+  margin-inline-start: -12px;
+}
+
+.book-introduction-desc-text-btn-icon {
+  transform: rotate(-90deg);
+  transition: transform var(--first-transition);
+
+  &.complete {
+    transform: rotate(90deg);
+  }
+}
+
+.book-introduction-categories {
+  display: flex;
+  align-items: center;
+}
+
+.book-introduction-categories-title {
+  font-size: var(--title-font);
+  font-family: "my-font-demibold", serif;
+  margin-inline-end: 8px;
+}
+
+.book-introduction-categories-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-introduction-categories-items-item {
+  border: 1px solid var(--second-border-color);
+  border-radius: var(--first-radius);
+  padding: 8px;
+  font-size: var(--regular-font);
+  font-family: "my-font-demibold", serif;
+}
+
+.book-introduction-tags {
+  display: flex;
+  align-items: center;
+}
+
+.book-introduction-tags-title {
+  font-size: var(--title-font);
+  font-family: "my-font-demibold", serif;
+  margin-inline-end: 8px;
+}
+
+.book-introduction-tags-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-introduction-tags-items-item {
+  border: 1px solid var(--first-border-color);
+  border-radius: var(--forth-radius);
+  padding: 4px 8px;
+  font-size: var(--tiny-font);
+}
